@@ -9,21 +9,35 @@ body {
 
 header {
   background-color: black;
+  border-bottom: 1px solid seashell;
   height: 69px;
   width: 100%;
   position: fixed;
-  border-bottom: 1px solid seashell;
+  top: 0px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
   margin: 10px;
   text-decoration: underline;
-  display: flex;
-  justify-content: space-around;
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 350px;
+}
+
+main {
+  position: relative;
+  top: 69px;
+}
 
 .logo {
   height: 50px;
