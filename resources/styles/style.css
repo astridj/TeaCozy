@@ -73,7 +73,7 @@ nav ul {
 /* Tea of the Month Area Styles */
 
 
-.container {
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
