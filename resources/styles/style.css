@@ -7,6 +7,14 @@ body, a {
   text-align: center;
 }
 
+main {
+  position: relative;
+  padding-top: 44px;
+}
+
+
+/* Header Area Styles*/
+
 header {
   background-color: black;
   border-bottom: 1px solid seashell;
@@ -24,7 +32,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
-  margin: 10px;
+  margin-right: 10px;
   text-decoration: underline;
 }
 
@@ -35,12 +43,17 @@ nav ul {
   width: 350px;
 }
 
-main {
-  position: relative;
-  padding-top: 69px;
-}
-
 .logo {
   height: 50px;
   margin: 10px;
+}
+
+
+/* Hero Image Area Styles */
+
+#mission {
+  background-image: url("../images/img-mission-background.jpg");
+  height:700px;
+  width:1200px;
+  margin: 0 auto;
 }
