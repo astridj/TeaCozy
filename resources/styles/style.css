@@ -91,8 +91,27 @@ nav ul {
 
 #featured-tea {
   margin: 0 auto;
-  padding-top: 60px;
+  padding: 60px 0;
   width: 1000px;
 }
 
 /* Locations Area Styles */
+
+.address {
+  background-color: black;
+}
+
+#locations {
+  background-image: url("../images/img-locations-background.jpg");
+  height:500px;
+  width:1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#locations .flex-container {
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
