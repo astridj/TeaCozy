@@ -12,6 +12,11 @@ main {
   padding-top: 44px;
 }
 
+.banner h2, .banner h4, .tea h4 {
+  margin: 0;
+  padding: 10px;
+}
+
 
 /* Header Area Styles*/
 
@@ -65,7 +70,9 @@ nav ul {
   width: 100%;
 }
 
-.banner h2, .banner h4 {
-  margin: 0;
-  padding: 10px;
+/* Tea of the Month Area Styles */
+
+.tea img {
+  height: 200px;
+  width: 300px;
 }
