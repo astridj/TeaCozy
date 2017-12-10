@@ -12,7 +12,7 @@ main {
   padding-top: 44px;
 }
 
-.banner h2, .banner h4, .tea h4 {
+h2, h4 {
   margin: 0;
   padding: 10px;
 }
@@ -75,4 +75,16 @@ nav ul {
 .tea img {
   height: 200px;
   width: 300px;
+}
+
+.tea-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#featured-tea {
+  margin: 0 auto;
+  padding-top: 60px;
+  width: 1000px;
 }
