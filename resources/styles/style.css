@@ -1,6 +1,10 @@
-body, a {
+html {
+  font-size: 11px;
+}
+
+body {
   font-family: Helvetica;
-  font-size: 22px;
+  font-size: 2rem;
   color: seashell;
   background-color: black;
   box-sizing: border-box;
@@ -12,18 +16,14 @@ body, a {
   box-sizing: inherit;
 }
 
-#show {
-  display: block;
-}
-
 main {
   position: relative;
-  padding-top: 44px;
+  padding-top: 4rem;
 }
 
 h2, h4 {
   margin: 0;
-  padding: 10px;
+  padding: 1rem;
 }
 
 
@@ -47,7 +47,6 @@ nav {
   justify-content: flex-end;
   flex-grow: 1;
   margin-right: 10px;
-  text-decoration: underline;
 }
 
 nav ul {
@@ -56,6 +55,10 @@ nav ul {
   list-style-type: none;
   padding: 0;
   width: 350px;
+}
+
+li a {
+  color: seashell;
 }
 
 .mobile,
@@ -103,13 +106,10 @@ nav ul {
     margin: 0 auto;
   }
 
-  nav.mobile {
-    display: flex;
-  }
-
   .mobile {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .mobile-list {
@@ -153,11 +153,7 @@ section#mission {
   align-items: center;
 }
 
-@media only and screen (max-width: 1300px) {
-  #mission {
-    width: 100%;
-  }
-}
+
 
 /* Tea of the Month Area Styles */
 
@@ -181,7 +177,7 @@ section#mission {
 #featured-tea {
   margin: 0 auto;
   padding: 60px 0;
-  width: 1000px;
+  width: 100%;
 }
 
 /* Locations Area Styles */
@@ -195,15 +191,17 @@ section#mission {
 
 #locations {
   background-image: url("../images/img-locations-background.jpg");
-  height:500px;
-  width:1200px;
+  background-position: center center;
+  background-size: cover;
+  min-height: 500px;
+  width: 100%;
   padding: 60px 0 15px 0;
   margin: 0 auto;
 }
 
 #locations .flex-container {
   margin: 0 auto;
-  width: 1050px;
+  width: 90%;
   justify-content: space-around;
 }
 
@@ -222,11 +220,20 @@ section#mission {
   padding-left: 20px;
 }
 
+@media only and screen (max-width: 1300px) {
+  #mission,
+  #featured-tea,
+  #locations {
+    width: 100%;
+  }
+}
+
 /*Hamburger Icon */
 
 #nav-toggle {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
+  margin: 0 auto;
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
