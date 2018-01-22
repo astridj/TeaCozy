@@ -1,0 +1,41 @@
+header {
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  height: 69px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  .logo {
+    height: 50px;
+    margin: 10px;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-right: 10px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      padding: 0;
+      width: 350px;
+      li {
+        a {
+          color: seashell;
+        }
+      }
+    }
+  }
+  .mobile {
+    display: none;
+    .mobile-list {
+      display: none;
+      justify-content: flex-end;
+    }
+  }
+}

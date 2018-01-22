@@ -1,0 +1,79 @@
+@media only screen and (max-width: 1300px) {
+  #mission,
+  #featured-tea,
+  #locations {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    header {
+      flex-direction: column;
+      height: auto;
+      nav {
+        background-color: seashell;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        ul {
+          margin: 0;
+          width: 100%;
+          li {
+            padding: 5px 135px;
+            a {
+              color: black;
+              background-color: seashell;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .mobile-list {
+          background-color: seashell;
+          padding-top: 10px;
+        }
+        #nav-toggle {
+          background-color: seashell;
+          color: black;
+          cursor: pointer;
+          margin: 0 auto;
+          padding: 10px 35px 16px 0px;
+          text-align: center;
+          span {
+            @include nav-span-properties-transition;
+            &:before {
+              @include nav-span-properties-transition;
+              top: -10px;
+            }
+            &:after {
+              @include nav-span-properties-transition;
+              bottom: -10px;
+            }
+          }
+        }
+        #nav-toggle.active {
+          span {
+            background-color: transparent;
+            &:before {
+              transform: rotate(45deg);
+              top: 0;
+            }
+            &:after {
+              transform: rotate(-45deg);
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

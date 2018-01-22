@@ -1,0 +1,11 @@
+@mixin nav-span-properties-transition {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #343434;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 200ms ease-in-out;
+}
