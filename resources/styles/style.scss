@@ -2,6 +2,11 @@ html {
   font-size: 11px;
 }
 
+h2, h4 {
+  margin: 0;
+  padding: 1rem;
+}
+
 body {
   font-family: Helvetica;
   font-size: 2rem;
@@ -10,217 +15,131 @@ body {
   box-sizing: border-box;
   opacity: 0.9;
   text-align: center;
+
+  header {
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    .logo {
+      height: 50px;
+      margin: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      flex-grow: 1;
+      margin-right: 10px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+        width: 350px;
+        li {
+          a {
+            color: seashell;
+          }
+        }
+      }
+    }
+    .mobile {
+      display: none;
+      .mobile-list {
+        display: none;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  main {
+    position: relative;
+    padding-top: 4rem;
+    section {
+      margin: 0 auto;
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .tea {
+          img {
+            height: 200px;
+            width: 300px;
+            padding: 15px;
+          }
+          h4 {
+            padding-top: 0px;
+          }
+        }
+      }
+    }
+    #mission {
+      background-image: url("../images/img-mission-background.jpg");
+      background-position: center center;
+      background-size: cover;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px;
+      .banner {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+      }
+    }
+    #featured-tea {
+      padding: 60px 0;
+      width: 100%;
+    }
+    #locations {
+      background-image: url("../images/img-locations-background.jpg");
+      background-position: center center;
+      background-size: cover;
+      min-height: 500px;
+      width: 100%;
+      padding: 60px 0 15px 0;
+      .flex-container {
+        margin: 0 auto;
+        width: 90%;
+        justify-content: space-around;
+        .address {
+          background-color: black;
+          width: 300px;
+          margin: 10px 20px;
+          padding: 5px;
+          p {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .info {
+      height: 200px;
+    }
+    .copyright {
+      text-align: left;
+      padding-left: 20px;
+    }
+  }
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-main {
-  position: relative;
-  padding-top: 4rem;
-}
-
-h2, h4 {
-  margin: 0;
-  padding: 1rem;
-}
-
-
-/* Header Area Styles*/
-
-header {
-  background-color: black;
-  border-bottom: 1px solid seashell;
-  height: 69px;
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 2;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
-  margin-right: 10px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
-  width: 350px;
-}
-
-li a {
-  color: seashell;
-}
-
-.mobile,
-.mobile-list {
-  display: none;
-  justify-content: flex-end;
-}
-
-.logo {
-  height: 50px;
-  margin: 10px;
-}
-
-
-@media only screen and (max-width: 850px) {
-  header {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .desktop {
-    display: none;
-  }
-
-  nav {
-    background-color: seashell;
-    padding: 10px;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  nav ul {
-    margin: 0;
-    width: 100%;
-  }
-
-  ul li {
-    padding: 5px 135px;
-  }
-
-  li a {
-    color: black;
-    background-color: seashell;
-    margin: 0 auto;
-  }
-
-  .mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .mobile-list {
-    background-color: seashell;
-  }
-
-  #nav-toggle {
-    background-color: seashell;
-    color: black;
-    padding: 10px 0;
-    margin: 0;
-    text-align: center;
-  }
-}
-
-/* Hero Image Area Styles */
-
-.banner {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  width: 100%;
-}
-
-section#mission {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 100px;
-}
-
-#mission {
-  background-image: url("../images/img-mission-background.jpg");
-  background-position: center center;
-  background-size: cover;
-  min-height: 300px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-
-
-/* Tea of the Month Area Styles */
-
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.tea img {
-  height: 200px;
-  width: 300px;
-  padding: 15px;
-}
-
-.tea h4 {
-  padding-top: 0px;
-}
-
-#featured-tea {
-  margin: 0 auto;
-  padding: 60px 0;
-  width: 100%;
-}
-
-/* Locations Area Styles */
-
-.address {
-  background-color: black;
-  width: 300px;
-  margin: 10px 20px;
-  padding: 5px;
-}
-
-#locations {
-  background-image: url("../images/img-locations-background.jpg");
-  background-position: center center;
-  background-size: cover;
-  min-height: 500px;
-  width: 100%;
-  padding: 60px 0 15px 0;
-  margin: 0 auto;
-}
-
-#locations .flex-container {
-  margin: 0 auto;
-  width: 90%;
-  justify-content: space-around;
-}
-
-#locations p {
-  padding: 10px;
-}
-
-/* Footer Area Styles */
-
-.info {
-  height: 200px;
-}
-
-.copyright {
-  text-align: left;
-  padding-left: 20px;
-}
-
-@media only and screen (max-width: 1300px) {
+@media only screen and (max-width: 1300px) {
   #mission,
   #featured-tea,
   #locations {
@@ -228,52 +147,97 @@ section#mission {
   }
 }
 
-/*Hamburger Icon */
-
-#nav-toggle {
-  cursor: pointer;
-  padding: 10px 35px 16px 0px;
-  margin: 0 auto;
-}
-
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background: #343434;
-  position: absolute;
-  display: block;
-  content: '';
-}
-
-#nav-toggle span:before {
-  top: -10px;
-}
-
-#nav-toggle span:after {
-  bottom: -10px;
-}
-
-
-/*Animated Hamburger Icon*/
-
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 200ms ease-in-out;
-}
-
-#nav-toggle.active span {
-  background-color: transparent;
-}
-
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}
-
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-}
-
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
+@media only screen and (max-width: 850px) {
+  body {
+    header {
+      flex-direction: column;
+      height: auto;
+      nav {
+        background-color: seashell;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        ul {
+          margin: 0;
+          width: 100%;
+          li {
+            padding: 5px 135px;
+            a {
+              color: black;
+              background-color: seashell;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .mobile-list {
+          background-color: seashell;
+        }
+        #nav-toggle {
+          background-color: seashell;
+          color: black;
+          cursor: pointer;
+          margin: 0 auto;
+          padding: 10px 0;
+          text-align: center;
+          span {
+            cursor: pointer;
+            border-radius: 1px;
+            height: 5px;
+            width: 35px;
+            background: #343434;
+            position: absolute;
+            display: block;
+            content: '';
+            transition: all 200ms ease-in-out;
+            span:before {
+              cursor: pointer;
+              border-radius: 1px;
+              height: 5px;
+              width: 35px;
+              background: #343434;
+              position: absolute;
+              display: block;
+              content: '';
+              transition: all 200ms ease-in-out;
+              top: -10px;
+            }
+            span:after {
+              cursor: pointer;
+              border-radius: 1px;
+              height: 5px;
+              width: 35px;
+              background: #343434;
+              position: absolute;
+              display: block;
+              content: '';
+              transition: all 200ms ease-in-out;
+              bottom: -10px;
+            }
+          }
+        }
+        #nav-toggle.active {
+          span {
+            background-color: transparent;
+            span:before {
+              transform: rotate(45deg);
+              top: 0;
+            }
+            span:after {
+              transform: rotate(-45deg);
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }

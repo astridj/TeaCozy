@@ -1,0 +1,188 @@
+html {
+  font-size: 11px; }
+
+h2, h4 {
+  margin: 0;
+  padding: 1rem; }
+
+body {
+  font-family: Helvetica;
+  font-size: 2rem;
+  color: seashell;
+  background-color: black;
+  box-sizing: border-box;
+  opacity: 0.9;
+  text-align: center; }
+  body header {
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2; }
+    body header .logo {
+      height: 50px;
+      margin: 10px; }
+    body header nav {
+      display: flex;
+      justify-content: flex-end;
+      flex-grow: 1;
+      margin-right: 10px; }
+      body header nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+        width: 350px; }
+        body header nav ul li a {
+          color: seashell; }
+    body header .mobile {
+      display: none; }
+      body header .mobile .mobile-list {
+        display: none;
+        justify-content: flex-end; }
+  body main {
+    position: relative;
+    padding-top: 4rem; }
+    body main section {
+      margin: 0 auto; }
+      body main section .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        body main section .flex-container .tea img {
+          height: 200px;
+          width: 300px;
+          padding: 15px; }
+        body main section .flex-container .tea h4 {
+          padding-top: 0px; }
+    body main #mission {
+      background-image: url("../images/img-mission-background.jpg");
+      background-position: center center;
+      background-size: cover;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px; }
+      body main #mission .banner {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 100%; }
+    body main #featured-tea {
+      padding: 60px 0;
+      width: 100%; }
+    body main #locations {
+      background-image: url("../images/img-locations-background.jpg");
+      background-position: center center;
+      background-size: cover;
+      min-height: 500px;
+      width: 100%;
+      padding: 60px 0 15px 0; }
+      body main #locations .flex-container {
+        margin: 0 auto;
+        width: 90%;
+        justify-content: space-around; }
+        body main #locations .flex-container .address {
+          background-color: black;
+          width: 300px;
+          margin: 10px 20px;
+          padding: 5px; }
+          body main #locations .flex-container .address p {
+            padding: 10px; }
+  body footer .info {
+    height: 200px; }
+  body footer .copyright {
+    text-align: left;
+    padding-left: 20px; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+@media only screen and (max-width: 1300px) {
+  #mission,
+  #featured-tea,
+  #locations {
+    width: 100%; } }
+@media only screen and (max-width: 850px) {
+  body header {
+    flex-direction: column;
+    height: auto; }
+    body header nav {
+      background-color: seashell;
+      padding: 10px;
+      margin: 0;
+      text-align: center;
+      width: 100%; }
+      body header nav ul {
+        margin: 0;
+        width: 100%; }
+        body header nav ul li {
+          padding: 5px 135px; }
+          body header nav ul li a {
+            color: black;
+            background-color: seashell;
+            margin: 0 auto; }
+    body header .desktop {
+      display: none; }
+    body header .mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body header .mobile .mobile-list {
+        background-color: seashell; }
+      body header .mobile #nav-toggle {
+        background-color: seashell;
+        color: black;
+        cursor: pointer;
+        margin: 0 auto;
+        padding: 10px 0;
+        text-align: center; }
+        body header .mobile #nav-toggle span {
+          cursor: pointer;
+          border-radius: 1px;
+          height: 5px;
+          width: 35px;
+          background: #343434;
+          position: absolute;
+          display: block;
+          content: '';
+          transition: all 200ms ease-in-out; }
+          body header .mobile #nav-toggle span span:before {
+            cursor: pointer;
+            border-radius: 1px;
+            height: 5px;
+            width: 35px;
+            background: #343434;
+            position: absolute;
+            display: block;
+            content: '';
+            transition: all 200ms ease-in-out;
+            top: -10px; }
+          body header .mobile #nav-toggle span span:after {
+            cursor: pointer;
+            border-radius: 1px;
+            height: 5px;
+            width: 35px;
+            background: #343434;
+            position: absolute;
+            display: block;
+            content: '';
+            transition: all 200ms ease-in-out;
+            bottom: -10px; }
+      body header .mobile #nav-toggle.active span {
+        background-color: transparent; }
+        body header .mobile #nav-toggle.active span span:before {
+          transform: rotate(45deg);
+          top: 0; }
+        body header .mobile #nav-toggle.active span span:after {
+          transform: rotate(-45deg);
+          top: 0; } }
+
+/*# sourceMappingURL=sassstyles.css.map */
